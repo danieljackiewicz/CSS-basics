@@ -123,7 +123,11 @@ ustawi czcionkę w paragrafie "p" tylko jeśli to jest dziecko main-header
 #all-articles h2 + p{
     color: green;
 }
-
+/*
+*
+*dynamic/behavioral pseudo classes
+*
+*/
 a:hover{
     color: red;
     }
