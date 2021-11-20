@@ -1,0 +1,50 @@
+/*article {
+  font-size: 16px;
+}
+article h2 {
+  font-size: 4em;
+}
+article p {
+  font-size: 50%;
+}
+article ma 16px, następnie powiększyliśmy 4 razy h2 od 16px oraz zmniejszamy p o 50% z 16px.*/
+
+article h2,
+article p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*jeśli nie ma arial na kompie to wybierz Helvetica, jeśli nie to sans-serif itd*/
+
+a {
+  text-decoration: inherit;
+} /*inherit - dziedziczy po rodzicu*/
+
+h1 {
+  font-weight: normal;
+} /*nie wszystkie czcionki mają opcje bolder i lighter*/
+h1 {
+  text-transform: capitalize;
+} /*capitalize ustawia wielkie litery w każdym słowie*/
+
+h2 {
+  text-transform: uppercase;
+}
+
+article > p {
+  color: red;
+  background-color: khaki;
+}
+a {
+  color: greenyellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: darkmagenta;
+  background-color: darkolivegreen;
+}
+p {
+  letter-spacing: 0.2em;
+  word-spacing: 12px;
+  line-height: 20px; /*nie definiujemy wielkości przerwy tylko wielkość przerwy z czcionką font 12px i przerwa 8px*/
+}
