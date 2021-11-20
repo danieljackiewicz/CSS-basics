@@ -1,4 +1,42 @@
-#head {
-   color: red;
-    
+article p:first-child {
+    font-weight: bold;
+} /*nie działa, ponieważ first-child to h2 a nie p*/
+article p:last-child{
+    color: red;
+} /* nie działa w body, ponieważ last-child to hr, a nie p, ale działa w div*/
+article p:first-of-type{
+    color: red;
+} /*działa przed/jest ważniejsze nth-of-type, bo zapewne jest bardziej szczegółowe*/
+
+/*
+**NTH CHILD**
+*/
+li:nth-child(1), li:nth-child(7) {
+    font-weight: bold;
+}
+/*
+li:nth-child(even){
+    background-color: grey;
+}
+li:nth-child(odd){
+    background-color: pink;
+}
+*/
+li:nth-child(3n + 1){
+    color: pink;
+} /*n startuje od zera - 3*0+1=1 3*1+1=4 czyli pierwszy i czwarty*/
+
+/**********
+nth wskazuje na dziecko a nie na dziecko selektora
+article:nth-child(2) to tam gdzie article jest drugim dzieckiem  a nie wskazuje na drugie dziecko artykułu*****************************/
+
+article:nth-child(2){
+    background: grey;
+}
+
+article:nth-of-type(2){
+    font-style: italic;
+} /*wybrał każdy drugi w sekcji body plus w sekcji div*/
+article:nth-of-type(2n + 1){
+    color: goldenrod
 }
