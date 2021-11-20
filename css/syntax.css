@@ -124,5 +124,13 @@ ustawi czcionkę w paragrafie "p" tylko jeśli to jest dziecko main-header
     color: green;
 }
 
+a:hover{
+    color: red;
+    }
+a:active{
+    color: orange;
+}
 
-
+a:visited{
+    color: purple;
+}
