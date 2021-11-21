@@ -48,3 +48,7 @@ p {
   word-spacing: 12px;
   line-height: 20px; /*nie definiujemy wielkości przerwy tylko wielkość przerwy z czcionką font 12px i przerwa 8px*/
 }
+
+P {
+  margin-bottom: 32px; 
+}
