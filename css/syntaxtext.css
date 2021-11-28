@@ -1,0 +1,167 @@
+/*article {
+  font-size: 16px;
+}
+article h2 {
+  font-size: 4em;
+}
+article p {
+  font-size: 50%;
+}
+article ma 16px, następnie powiększyliśmy 4 razy h2 od 16px oraz zmniejszamy p o 50% z 16px.*/
+
+article h2,
+article p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*jeśli nie ma arial na kompie to wybierz Helvetica, jeśli nie to sans-serif itd*/
+
+a {
+  text-decoration: inherit;
+} /*inherit - dziedziczy po rodzicu*/
+
+h1 {
+  font-weight: normal;
+} /*nie wszystkie czcionki mają opcje bolder i lighter*/
+h1 {
+  text-transform: capitalize;
+} /*capitalize ustawia wielkie litery w każdym słowie*/
+
+h2 {
+  text-transform: uppercase;
+}
+
+article > p {
+  color: red;
+  background-color: khaki;
+}
+a {
+  color: greenyellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: darkmagenta;
+  background-color: darkolivegreen;
+}
+p {
+  letter-spacing: 0.2em;
+  word-spacing: 12px;
+  line-height: 20px; /*nie definiujemy wielkości przerwy tylko wielkość przerwy z czcionką font 12px i przerwa 8px*/
+}
+
+P {
+  margin-bottom: 32px;
+}
+
+.box {
+  margin: 30px 20px 30px 20px; /* góra prawo.. zgodnie z ruchem wskazówek*/
+  /*margin: 30px 20px; określa górę i dół oraz lewo i prawo
+  margin: 30px 20px 15px; określa górę, lewo i prawo razem, dół*/
+  padding: 30px; /*padding działa tak samo jak margin - góra, prawo, dół, lewo*/
+  border: 1px solid #000;
+}
+.small {
+  border: 1px solid #000;
+  padding: 5px;
+} /*każda klasa zawierająca "small" będzie nadpisana przez padding: 5px */
+
+.block {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #000;
+}
+
+.inline {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #000;
+  display: inline-block; /* zmienia wyświetlanie i zachowanie elementów inline w blokowe, zachowując właściwości obu*/
+}
+#border-content div {
+  background-color: grey;
+  margin: 0 0 20px 0;
+}
+.border-one {
+  width: 70%;
+  height: 100px;
+  border-radius: 10px;
+}
+.border-two {
+  width: 60%;
+  height: 100px;
+  border-radius: 5px 10px 20px 30px;
+}
+.border-three {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+.border-four {
+  width: 300px;
+  height: 300px;
+  /*
+  background-color: #606060;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Five-pointed_star.svg/255px-Five-pointed_star.svg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+  */
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Five-pointed_star.svg/255px-Five-pointed_star.svg.png)
+    no-repeat center;
+  background-color: #606060;
+  background-size: 200px;
+  /*użyliśmy 3 linijek zamiast 6 - taki skrót*/
+}
+#banner {
+  background-color: #606060;
+  width: 100%;
+  height: 300px;
+  background-image: url(https://img.favpng.com/7/1/24/google-logo-google-search-icon-png-favpng-DLXaPGArrFH6yJjYE8USnMuvX_t.jpg),
+    url(http://about.canva.com/wp-content/uploads/sites/3/2015/02/Etsy-Banners.png);
+  background-repeat: no-repeat;
+  background-position: center, top left; /* określamy kolejno atrybut pierwszego i drugiego obrazka*/
+  background-size: 300px, 100%;
+}
+#banner-color {
+  width: 100%;
+  height: 300px;
+  background-color: #aaa333;
+}
+#circle {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  background: rgb(200, 200, 100, 0.5);
+  border-radius: 200px;
+  top: 3400px;
+  left: 50px;
+  /*
+  opacity: 0.5;
+  */
+  text-align: center;
+}
+#circle-2 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  background: rgb(200, 100, 200);
+  border-radius: 200px;
+  top: 3500px;
+  left: 150px;
+  text-align: center;
+  box-shadow: 15px 7px 4px #777aaa;
+}
+#circle-3 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  background: rgb(100, 200, 200, 0.4);
+  border-radius: 200px;
+  top: 3400px;
+  left: 250px;
+  /*
+  opacity: 0.4; wpływa na całą przeźroczystość, nawet tekstu. Umieszczając 4 atrybut w 
+  background określamy opacity background a nie tekstu
+  */
+  text-align: center;
+}
