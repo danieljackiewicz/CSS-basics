@@ -1,0 +1,47 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  flex-flow: column;
+  height: 600px;
+  align-items: center;
+
+  /*flex-flow: column;
+  justify-content: flex-end;
+  height: 800px;*/
+}
+
+.box {
+  width: 100px;
+  flex: 0 0 100px; /*grow shrink basis*/
+}
+.one {
+  background: red;
+  /*flex-shrink: 2;
+  //flex-grow: 2;*/
+}
+.two {
+  background: blue;
+  /*flex-shrink: 3;
+  flex-grow: 3;*/
+}
+.three {
+  background: green;
+  /*flex-shrink: 1;
+  //flex-grow: 1;*/
+}
