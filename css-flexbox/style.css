@@ -1,15 +1,40 @@
-*{
-    font-family: verdana;
-    margin: 0;
+* {
+  font-family: verdana;
+  margin: 0;
 }
 
-body{
-    background: #eee;
+body {
+  background: #eee;
 }
 
-.wrapper{
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 100px;
+  flex: 1 0 300px; /*grow shrink basis*/
+}
+.one {
+  background: red;
+  /*flex-shrink: 2;
+  //flex-grow: 2;*/
+}
+.two {
+  background: blue;
+  /*flex-shrink: 3;
+  flex-grow: 3;*/
+}
+.three {
+  background: green;
+  /*flex-shrink: 1;
+  //flex-grow: 1;*/
+}
