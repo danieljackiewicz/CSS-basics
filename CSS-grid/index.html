@@ -17,15 +17,21 @@
         grid-template-columns: 33.3% 33.3% 33.3%;*/
         /*grid-template-columns: 1fr 2fr 1fr;*/
         grid-template-columns: repeat(
-          9,
+          3,
           1fr
         ); /*ilość powtórzeń, wielkość frakcji*/
+        /*grid-auto-rows: minmax(200px, auto);*/
+        /*grid-template-rows: repeat(3, 200px);*/
+        /*grid-column-gap: 10px;
+        grid-row-gap: 15px; można połączyć jak poniżej*/
+        grid-gap: 10px 30px;
         max-width: 960px;
         margin: 0 auto;
       }
       #content div {
         background: #3bbced;
         padding: 30px;
+        /*margin: 30px;*/
       }
       #content div:nth-child(even) {
         background: #777;
@@ -36,7 +42,12 @@
     <div id="content">
       <div>1</div>
       <div>2</div>
-      <div>3</div>
+      <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, corporis
+        excepturi facere, magnam est officia quasi, dolorem aspernatur explicabo
+        distinctio enim quas facilis illum ex voluptate quod? Reprehenderit, ad
+        molestias.
+      </div>
       <div>4</div>
       <div>5</div>
       <div>6</div>
